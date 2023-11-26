@@ -86,12 +86,12 @@
   (dorun
    (map-indexed
     (fn [i snippet]
-      (let [out-name (.replace (.getName f) ".clj" (str i ".md"))]
+      (let [out-name (.replace (.getName f) ".cljs" (str i ".md"))]
         (spit (File. snippets-dir out-name)
               (prettify-snippet snippet))))
     (get-snippets f))))
 
-(defn spit-all []
+(defn -main [& [arg]]
   (doseq [f (file-seq src-dir)
-          :when (.endsWith (.getName f) ".clj")]
+          :when (.endsWith (.getName f) ".cljs")]
     (spit-snippets f)))

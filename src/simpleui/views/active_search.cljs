@@ -17,7 +17,7 @@
 (defcomponent ^:endpoint active-search [req search]
   (let [search (.toLowerCase search)]
     (->> data
-      (filter #(-> % :name .toLowerCase (.contains search)))
+      (filter #(-> % :name .toLowerCase (.includes search)))
       (map tr))))
 
 (defexample

@@ -3,7 +3,7 @@ import { Router, createCors, error, json } from 'itty-router'
 
 const { preflight, corsify } = createCors({
 	origins: ['*'],
-	methods: ['GET', 'POST', 'PATCH', 'DELETE'],
+	methods: ['GET', 'POST', 'PATCH', 'DELETE', 'PUT'],
 })
 
 const router = Router()
