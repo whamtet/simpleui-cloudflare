@@ -1,7 +1,8 @@
 (ns simpleui.views.bulk-update
-    (:require-macros
-      [ctmx.core :as ctmx :refer [defcomponent defn-parse]]
-      [simpleui.example :refer [defexample]]))
+  (:require ctmx.core)
+  (:require-macros
+    [ctmx.core :as ctmx :refer [defcomponent defn-parse]]
+    [simpleui.example :refer [defexample]]))
 
 ;; snippet
 (def init-data

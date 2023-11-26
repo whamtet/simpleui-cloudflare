@@ -1,7 +1,8 @@
 (ns simpleui.views.click-to-edit
-    (:require-macros
-      [ctmx.core :as ctmx :refer [defcomponent]]
-      [simpleui.example :refer [defexample]]))
+  (:require ctmx.core)
+  (:require-macros
+    [ctmx.core :as ctmx :refer [defcomponent]]
+    [simpleui.example :refer [defexample]]))
 
 (defn- input [type name value]
   [:input {:type type :name name :value value}])

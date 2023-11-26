@@ -1,5 +1,6 @@
 (ns simpleui.views.hello
   (:require
+    ctmx.core
     [simpleui.util :as util]
     [simpleui.views.active-search :refer [active-search-handler]]
     [simpleui.views.bulk-update :refer [bulk-update-handler]]
@@ -112,7 +113,7 @@
    (customer-list req "Joe" "Stewart" [])))
 ;; snippet
 
-(defn ui-routes []
+(def ui-routes
   (concat
    demo
    data-flow

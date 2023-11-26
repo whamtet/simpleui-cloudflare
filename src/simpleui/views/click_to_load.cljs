@@ -1,7 +1,8 @@
 (ns simpleui.views.click-to-load
-    (:require-macros
-      [ctmx.core :as ctmx :refer [defcomponent]]
-      [simpleui.example :refer [defexample]]))
+  (:require ctmx.core)
+  (:require-macros
+    [ctmx.core :as ctmx :refer [defcomponent]]
+    [simpleui.example :refer [defexample]]))
 
 ;; snippet
 (def src "0123456789ABCDEF")

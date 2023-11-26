@@ -1,7 +1,8 @@
 (ns simpleui.views.infinite-scroll
-    (:require-macros
-      [ctmx.core :as ctmx :refer [defcomponent]]
-      [simpleui.example :refer [defexample]]))
+  (:require ctmx.core)
+  (:require-macros
+    [ctmx.core :as ctmx :refer [defcomponent]]
+    [simpleui.example :refer [defexample]]))
 
 ;; snippet
 (def src "0123456789ABCDEF")

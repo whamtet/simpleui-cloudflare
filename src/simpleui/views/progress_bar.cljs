@@ -1,7 +1,8 @@
 (ns simpleui.views.progress-bar
-    (:require-macros
-      [ctmx.core :as ctmx :refer [defcomponent]]
-      [simpleui.example :refer [defexample]]))
+  (:require ctmx.core)
+  (:require-macros
+    [ctmx.core :as ctmx :refer [defcomponent]]
+    [simpleui.example :refer [defexample]]))
 
 ;; snippet
 (defn- progress [width]
